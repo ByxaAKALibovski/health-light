@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <h1 class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/media/icons/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <address>
+                    Пензенская область, с. Бессоновка ул. Центральная, д. 206
+                </address>
+                <nav class="contact__nav contact__header">
+                    <a href="tel: 88414025400">8 (84140) 25-4-00</a>
+                    <a href="mailto: bessonovka@health.pnzreg.ru">bessonovka@health.pnzreg.ru</a>
+                </nav>
+                <a href="exit.html" class="exit__link" title="exit">
+                    <svg width="27.750000" height="27.750000" viewBox="0 0 27.75 27.75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="矢量 110"
+                            d="M10.93 19.4L13.1 21.58L20.81 13.87L13.1 6.16L10.93 8.34L14.9 12.33L0 12.33L0 15.41L14.9 15.41L10.93 19.4ZM24.66 0L3.08 0C1.37 0 0 1.38 0 3.08L0 9.25L3.08 9.25L3.08 3.08L24.66 3.08L24.66 24.66L3.08 24.66L3.08 18.5L0 18.5L0 24.66C0 26.36 1.37 27.75 3.08 27.75L24.66 27.75C26.36 27.75 27.75 26.36 27.75 24.66L27.75 3.08C27.75 1.38 26.36 0 24.66 0Z"
+                            fill="#B1D9FF" fill-opacity="1.000000" fill-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <a href="services.html">Услуги</a>
+                <a href="reviews.html">Отзывы</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="expert.html">Специалисты</a>
+                <a href="about.html">О нас</a>
+            </nav>
+        </header>
+        <main>
+            <section class="profile__sec">
+                <h2 class="title__main"></h2>
+                <nav class="profile__nav">
+                    <a href="personal" class="btn tabs active">Личные данные</a>
+                    <a href="history" class="btn tabs">История посещений</a>
+                </nav>
+            </section>
+            <section class="personal__sec" id="personal">
+                <div class="container">
+                    <form action="update_profile">
+                        <div class="input__block">
+                            <label for="FIO">ФИО</label>
+                            <input type="text" class="input__cust" placeholder="Фамилия Имя Отчество" required id="FIO"
+                                value="Мельникова Евгения Михайловна">
+                        </div>
+                        <div class="input__block">
+                            <label for="phone">Номер телефона</label>
+                            <input type="tel" class="input__cust" placeholder="+7 (900) 000 00 00" required id="phone"
+                                value="89273654476">
+                        </div>
+                        <div class="input__block">
+                            <label for="email">E-mail (используется как логин)</label>
+                            <input type="email" class="input__cust" placeholder="example@example.com" required
+                                id="email" value="jeka3452@mail.ru" disabled>
+                        </div>
+                        <input type="submit" class="btn" value="Соханить">
+                    </form>
+                </div>
+            </section>
+            <section class="history__sec" id="history">
+                <div class="container">
+                    <div class="row">
+                        <ul class="coming__list">
+                            <li data-item="3">
+                                <div class="row">
+                                    <div class="column">
+                                        <h3 class="expert__name">Тонкоглаз Анастасия Александровна</h3>
+                                        <div class="row date__time">
+                                            <p class="date">14.03.2025</p>
+                                            <p class="time">08:00</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn" data-target="cancel_recording">Отменить запись</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="complete__list">
+                            <li data-item="2">
+                                <div class="row">
+                                    <div class="column">
+                                        <h3 class="expert__name">Павленко Мария Сергеевна</h3>
+                                        <div class="row date__time">
+                                            <p class="date">02.03.2025</p>
+                                            <p class="time">14:00</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn" data-target="cancel_recording">Отменить запись</a>
+                                </div>
+                            </li>
+                            <li data-item="1">
+                                <div class="row">
+                                    <div class="column">
+                                        <h3 class="expert__name">Тонкоглаз Анастасия Александровна</h3>
+                                        <div class="row date__time">
+                                            <p class="date">05.02.2025</p>
+                                            <p class="time">10:30</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn" data-target="cancel_recording">Отменить запись</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <h1 class="footer__logo">
+                    <a href="index.html">
+                        <img src="assets/media/icons/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <address>
+                    Пензенская область, с. Бессоновка ул. Центральная, д. 206
+                </address>
+                <nav class="contact__nav contact__header">
+                    <a href="tel: 88414025400">8 (84140) 25-4-00</a>
+                    <a href="mailto: bessonovka@health.pnzreg.ru">bessonovka@health.pnzreg.ru</a>
+                </nav>
+            </div>
+            <nav class="footer__nav">
+                <a href="services.html">Услуги</a>
+                <a href="reviews.html">Отзывы</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="expert.html">Специалисты</a>
+                <a href="about.html">О нас</a>
+            </nav>
+        </footer>
+        <div class="popup" data-popup="add_application">
+            <div class="over"></div>
+            <div class="main">
+                <h2>Записаться на прием к врачу</h2>
+                <form action="add_application">
+                    <input type="text" placeholder="Ваше имя" name="name" class="input__cust" required>
+                    <input type="tel" placeholder="Телефон" name="phone" class="input__cust" required>
+                    <input type="submit" class="btn" value="записаться">
+                    <p>В ближайшее время с вами свяжется администратор, проконсультирует по условиями и стоимости лечения, подберет врача и запишет вас на удобное время</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
