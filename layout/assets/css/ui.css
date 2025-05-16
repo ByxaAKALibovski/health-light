@@ -602,3 +602,53 @@ section.no-active{
     opacity: 0;
     display: none;
 }
+
+.admin__list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 22px;
+
+    & li{
+        display: flex;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    
+        & p{
+            font-weight: 400;
+            font-size: 20px;
+            color: #444444;
+        }
+
+        &:hover .btn__container{
+            left: 0;
+        }
+
+        & .btn__container{
+            transition: 0.4s;
+            left: -50%;
+            position: absolute;
+            display: flex;
+            padding: 5px;
+            gap: 8px;
+
+            & button{
+                display: flex;
+                padding: 5px 10px;
+                background-color: #379FFF;
+
+                &.del{
+                    background-color: #ff2a2a;
+                }
+            }
+        }
+    }
+
+    & li.head p{
+        font-weight: 400;
+        font-size: 16px;
+        color: #379FFF;
+        text-transform: uppercase;
+    }
+}

@@ -20,11 +20,11 @@
                 <a href="admin-category.html">Специальности</a>
                 <a href="admin-services.html">Услуги</a>
                 <a href="admin-expert.html">Специалисты</a>
-                <a href="admin-application.html">Заявки</a>
+                <a href="admin-application.html">Заявки</a><a href="logout.html">Выйти</a>
             </nav>
         </header>
         <main>
-            <section class="admin_expert__sec">
+            <section class="admin_expert__sec admin__sec">
                 <div class="container">
                     <h2 class="title__main">Специалисты</h2>
                     <a href="#" class="btn" data-popup="add_expert_admin">добавить</a>
@@ -49,6 +49,10 @@
                                 (лечебное дело)</p>
                             <p class="experience">2015 – 2017 - Врач-акушер-гинеколог ГБУЗ «Городская поликлиника» г.
                                 Пенза</p>
+                            <div class="btn__container">
+                                <button class="del"><img src="assets/media/icons/del.svg" alt="del"></button>
+                                <button class="update"><img src="assets/media/icons/edit.svg" alt="edit"></button>
+                            </div>
                         </li>
                         <li data-expert="2">
                             <p class="fio">Кошкарова Надежда Алексеевна</p>
@@ -62,6 +66,10 @@
                                 (лечебное дело)</p>
                             <p class="experience">2015 – 2017 - Врач-акушер-гинеколог ГБУЗ «Городская поликлиника» г.
                                 Пенза</p>
+                            <div class="btn__container">
+                                <button class="del"><img src="assets/media/icons/del.svg" alt="del"></button>
+                                <button class="update"><img src="assets/media/icons/edit.svg" alt="edit"></button>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -84,9 +92,12 @@
                         <p>Прикрепите изображение</p>
                         <input type="file" required id="expert_image">
                     </label>
-                    <textarea name="description" id="description" placeholder="Описание" required class="input__cust"></textarea>
-                    <textarea name="education" id="education" placeholder="Образование" required class="input__cust"></textarea>
-                    <textarea name="experience" id="experience" placeholder="Опыт работы" required class="input__cust"></textarea>
+                    <textarea name="description" id="description" placeholder="Описание" required
+                        class="input__cust"></textarea>
+                    <textarea name="education" id="education" placeholder="Образование" required
+                        class="input__cust"></textarea>
+                    <textarea name="experience" id="experience" placeholder="Опыт работы" required
+                        class="input__cust"></textarea>
                     <input type="submit" class="btn" value="добавить">
                 </form>
             </div>

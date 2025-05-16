@@ -632,3 +632,99 @@ footer {
         }
     }
 }
+
+.admin__sec{
+    & .container{
+        gap: 50px;
+    }
+}
+
+.admin_expert__sec{
+    & .admin__list li{
+        justify-content: space-between;
+    }
+    & .admin__list li p{
+        &:nth-child(1){
+            width: 18%;
+        }
+        &:nth-child(2){
+            width: 18%;
+        }
+        &:nth-child(3){
+            width: 11%;
+        }
+        &:nth-child(4){
+            width: 26%;
+        }
+        &:nth-child(5){
+            width: 26%;
+        }
+        &:nth-child(6){
+            width: 22%;
+        }
+    }
+}
+
+.admin_application__sec{
+    & .admin__list li{
+        gap: 10px;
+    }
+    & .admin__list li p{
+        &:nth-child(1){
+            width: 30%;
+        }
+        &:nth-child(2){
+            width: 30%;
+        }
+    }
+}
+
+.admin_services__sec{
+    & .admin__list li{
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    & .admin__list li p{
+        width: 30%;
+    }
+}
+
+.admin_category__sec{
+    & .admin__list li{
+        justify-content: space-between;
+    }
+    & .admin__list li p{
+        &:nth-child(1){
+            width: 25%;
+        }
+        &:nth-child(2){
+            width: 40%;
+        }
+        &:nth-child(3){
+            width: 20%;
+        }
+    }
+}
+
+.admin_record__sec{
+    & .admin__list li{
+        justify-content: space-between;
+    }
+    & .admin__list li p{
+        &:nth-child(1){
+            width: 30%;
+        }
+        &:nth-child(2){
+            width: 18%;
+        }
+        &:nth-child(3){
+            width: 30%;
+        }
+        &:nth-child(4){
+            width: 10%;
+        }
+        &:nth-child(5){
+            width: 10%;
+        }
+    }
+}
