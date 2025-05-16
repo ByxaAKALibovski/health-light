@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/ui.css">
-    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -51,13 +51,15 @@
         </header>
         <main>
             <section class="profile__sec">
-                <h2 class="title__main"></h2>
-                <nav class="profile__nav">
-                    <a href="personal" class="btn tabs active">Личные данные</a>
-                    <a href="history" class="btn tabs">История посещений</a>
-                </nav>
+                <div class="container">
+                    <h2 class="title__main">личный кабинет пациента</h2>
+                    <nav class="profile__nav">
+                        <a href="personal" data-personal-switch="true" class="btn tabs active">Личные данные</a>
+                        <a href="history" data-personal-switch="true" class="btn tabs">История посещений</a>
+                    </nav>
+                </div>
             </section>
-            <section class="personal__sec" id="personal">
+            <section class="personal__sec active" id="personal">
                 <div class="container">
                     <form action="update_profile">
                         <div class="input__block">
@@ -79,10 +81,11 @@
                     </form>
                 </div>
             </section>
-            <section class="history__sec" id="history">
+            <section class="history__sec no-active" id="history">
                 <div class="container">
                     <div class="row">
                         <ul class="coming__list">
+                            <li class="head">Предстоящие услуги</li>
                             <li data-item="3">
                                 <div class="row">
                                     <div class="column">
@@ -97,6 +100,7 @@
                             </li>
                         </ul>
                         <ul class="complete__list">
+                            <li class="head">Выполненные услуги</li>
                             <li data-item="2">
                                 <div class="row">
                                     <div class="column">
@@ -106,7 +110,6 @@
                                             <p class="time">14:00</p>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn" data-target="cancel_recording">Отменить запись</a>
                                 </div>
                             </li>
                             <li data-item="1">
@@ -118,7 +121,6 @@
                                             <p class="time">10:30</p>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn" data-target="cancel_recording">Отменить запись</a>
                                 </div>
                             </li>
                         </ul>
@@ -157,7 +159,8 @@
                     <input type="text" placeholder="Ваше имя" name="name" class="input__cust" required>
                     <input type="tel" placeholder="Телефон" name="phone" class="input__cust" required>
                     <input type="submit" class="btn" value="записаться">
-                    <p>В ближайшее время с вами свяжется администратор, проконсультирует по условиями и стоимости лечения, подберет врача и запишет вас на удобное время</p>
+                    <p>В ближайшее время с вами свяжется администратор, проконсультирует по условиями и стоимости
+                        лечения, подберет врача и запишет вас на удобное время</p>
                 </form>
             </div>
         </div>

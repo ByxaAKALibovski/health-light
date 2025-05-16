@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav class="header__nav">
+                <a href="admin-record.html">Запись к врачу</a>
+                <a href="admin-category.html">Специальности</a>
+                <a href="admin-services.html">Услуги</a>
+                <a href="admin-expert.html">Специалисты</a>
+                <a href="admin-application.html">Заявки</a>
+            </nav>
+        </header>
+        <main>
+            <section class="admin_record__sec">
+                <div class="container">
+                    <h2 class="title__main">Запись к врачу</h2>
+                    <a href="#" class="btn" data-popup="add_record_admin">записать</a>
+                    <ul class="admin__list">
+                        <li class="head">
+                            <p>ФИО пациента</p>
+                            <p>Номер телефона</p>
+                            <p>врач</p>
+                            <p>дата</p>
+                            <p>Время</p>
+                        </li>
+                        <li data-record="1">
+                            <p class="fio">
+                                Мельникова Евгения Михайловна
+                            </p>
+                            <p class="phone">
+                                89273654476
+                            </p>
+                            <p class="doctor">
+                                Тонкоглаз Анастасия Александровна
+                            </p>
+                            <p class="date">
+                                14.03.2025
+                            </p>
+                            <p class="time">
+                                08:00
+                            </p>
+                        </li>
+                        <li data-record="2">
+                            <p class="fio">
+                                Мельникова Евгения Михайловна
+                            </p>
+                            <p class="phone">
+                                89273654476
+                            </p>
+                            <p class="doctor">
+                                Павленко Мария Сергеевна
+                            </p>
+                            <p class="date">
+                                02.03.2025
+                            </p>
+                            <p class="time">
+                                14:00
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <div class="popup" data-popup="add_record_admin">
+            <div class="over"></div>
+            <div class="main">
+                <h2>Записать к врачу</h2>
+                <form action="add_record_admin">
+                    <input type="text" placeholder="ФИО пациента" name="fio" class="input__cust" required>
+                    <input type="tel" placeholder="Номер телефона" name="phone" class="input__cust" required>
+                    <select class="custom__select" name="category" id="category" title="category">
+                        <option value="" selected>Выберите специальность</option>
+                        <option value="1">Аллергология</option>
+                        <option value="2">Вакцинопрофилактика</option>
+                        <option value="3">Гастроэнтерология</option>
+                        <option value="4">Гинекология</option>
+                    </select>
+                    <select class="custom__select" name="doctor" id="doctor" title="doctor">
+                        <option value="" selected>Выберите врача</option>
+                        <option value="1">Казанцева Альфия Галикарамовна</option>
+                        <option value="2">Симанина Светлана Викторовна</option>
+                        <option value="3">Кошкарова Надежда Алексеевна</option>
+                        <option value="4">Майоров Олег Николаевич</option>
+                    </select>
+                    <div class="row">
+                        <input type="date" class="input__cust" placeholder="Дата" name="date" required>
+                        <input type="time" class="input__cust" placeholder="Время" name="time" required>
+                    </div>
+                    <input type="submit" class="btn" value="Записать">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

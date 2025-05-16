@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav class="header__nav">
+                <a href="admin-record.html">Запись к врачу</a>
+                <a href="admin-category.html">Специальности</a>
+                <a href="admin-services.html">Услуги</a>
+                <a href="admin-expert.html">Специалисты</a>
+                <a href="admin-application.html">Заявки</a>
+            </nav>
+        </header>
+        <main>
+            <section class="admin_category__sec">
+                <div class="container">
+                    <h2 class="title__main">Специальности</h2>
+                    <a href="#" class="btn" data-popup="add_category_admin">добавить</a>
+                    <ul class="admin__list">
+                        <li class="head">
+                            <p>Наименование</p>
+                            <p>Описание</p>
+                            <p>фото</p>
+                        </li>
+                        <li data-category="1">
+                            <p class="title">Кардиология</p>
+                            <p class="description">Болезни сердца и сосудов преобладают над всеми остальными
+                                заболеваниями. Их профилактикой и лечением занимается врач-кардиолог. Обращаться к врачу
+                                нужно при появлении болей в сердце, одышки, длительном повышении давления.</p>
+                            <p class="image">Кардиология.png</p>
+                        </li>
+                        <li data-category="2">
+                            <p class="title">Неврология</p>
+                            <p class="description">Болезни сердца и сосудов преобладают над всеми остальными
+                                заболеваниями. Их профилактикой и лечением занимается врач-кардиолог. Обращаться к врачу
+                                нужно при появлении болей в сердце, одышки, длительном повышении давления.</p>
+                            <p class="image">Неврология.png</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <div class="popup" data-popup="add_category_admin">
+            <div class="over"></div>
+            <div class="main">
+                <h2>Добавить новую специальность</h2>
+                <form action="add_record_admin">
+                    <input type="text" placeholder="Наименование" name="title" class="input__cust" required>
+                    <textarea name="description" id="description" placeholder="Описание" required class="input__cust"></textarea>
+                    <label for="category_image" class="input_file__block">
+                        <p>Прикрепите изображение</p>
+                        <input type="file" required id="category_image">
+                    </label>
+                    <input type="submit" class="btn" value="добавить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
